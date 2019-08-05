@@ -9,6 +9,11 @@ def test_team_name
   assert_equal('Ireland', example_team.team_name())
 end
 
+# def test_team_name # Karolina's alternative version (with a different approach to the array). It also passes.
+#     team = SportsTeam.new('Ireland', players = ['Avery Bradley','Jordan Caroline', 'Troy Daniels'] , 'Frank Vogel', 1 )
+#     assert_equal('Ireland', team.team_name())
+#   end
+
 def test_players_names
   example_team = SportsTeam.new('Ireland', ['Joe', 'Calum'], 'Jessica Adams', 1)
   assert_equal(['Joe', 'Calum'], example_team.players())
